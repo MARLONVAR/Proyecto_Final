@@ -25,7 +25,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-image: url("https://cdn.mequieroir.com/wp-content/webp-express/webp-images/uploads/2019/11/canada_ciudad.jpg.webp");
              background-attachment: fixed;
              background-size: cover
          }}
