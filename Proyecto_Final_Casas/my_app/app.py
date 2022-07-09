@@ -20,22 +20,27 @@ st.set_page_config(page_title='App - Venta de aptos',
                     page_icon=':house',  
                     initial_sidebar_state="expanded")
 
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
+add_bg_from_url() 
 
 
 st.title('Dinámica Inmobiliaria en King County')
 st.header('Propuesto por Marlon Vargas')
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://cdn.mequieroir.com/wp-content/webp-express/webp-images/uploads/2019/11/canada_ciudad.jpg.webp");
-background-size: cover;
-}
-</style>
-'''
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # @st.cache
 def get_data():
